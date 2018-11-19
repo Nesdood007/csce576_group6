@@ -1,1 +1,56 @@
 /* This is the Main Style File */
+
+html {
+  margin: 0px;
+  
+}
+
+body {
+  margin: 0px;
+}
+
+header {
+  background-color: #eee;
+  padding: 0px;
+}
+
+header #menu {
+  background-color: black;
+  color: white;
+}
+
+header #logo {
+  background-image: url('/img/logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
+  margin: auto;
+}
+
+header #nav {
+  border-radius: 5px;
+}
+
+header #search {
+  margin: auto;
+  width: 100%
+}
+
+header #search form {
+  width: 100%;
+}
+
+header #search form input {
+  width: 100%;
+}
+
+header ul {
+  text-decoration: none;
+  display: inline;
+}
+
+header ul li {
+  background-color: #333;
+  color: white;
+}
+
