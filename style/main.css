@@ -1,5 +1,55 @@
 /* This is the Main Style File */
 
+@font-face {
+  font-family: bold;
+  src: url('/font/bold.ttf');
+}
+
+@font-face {
+  font-family: regular;
+  src: url('/font/regular.ttf');
+}
+
+@font-face {
+  font-family: italic;
+  src: url('/font/italic.ttf');
+}
+
+@font-face {
+  font-family: light;
+  src: url('/font/light.ttf');
+}
+
+@font-face {
+  font-family: bold-italic;
+  src: url('/font/bolditalic.ttf');
+}
+
+@font-face {
+  font-family: extra-light;
+  src: url('/font/extralight.ttf');
+}
+
+@font-face {
+  font-family: semi-bold;
+  src: url('/font/semibold.ttf');
+}
+
+@font-face {
+  font-family: black;
+  src: url('/font/black.ttf');
+}
+
+@font-face {
+  font-family: black-italic;
+  src: url('/font/blackitalic.ttf');
+}
+
+@font-face {
+  font-family: extra-light-italic;
+  src: url('/font/extralightitalic.ttf');
+}
+
 html {
   margin: 0px;
   
@@ -7,6 +57,7 @@ html {
 
 body {
   margin: 0px;
+  font-family: regular;
 }
 
 header {
@@ -17,6 +68,24 @@ header {
 header #menu {
   background-color: black;
   color: white;
+  font-family: light;
+  margin: 0px;
+  width: 25%;
+  float: right;
+  padding: 5px;
+  border-left: 5px solid #73000a;
+}
+
+header #menu p {
+  margin: 0px;
+  margin-left: 2em;
+  text-align: center;
+}
+
+header #menu .avatar {
+  max-width: 1em;
+  margin: auto;
+  float: left;
 }
 
 header #logo {
@@ -29,28 +98,94 @@ header #logo {
 
 header #nav {
   border-radius: 5px;
+  overflow: hidden;
+  font-family: bold;
+  margin: auto;
+  width: 80%;
 }
+
+header #nav ul {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+header #nav ul li {
+  display: block;
+  margin: 0px 5px;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+
+header #nav ul li a {
+  /*background-color: #ff000088;*/
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 7.5px;
+  border-radius: 5px;
+}
+
+header #nav ul li a.selected {
+  background-color: #aa3333;
+  color: white;
+}
+
+header #nav ul li a:hover {
+  text-decoration: none;
+  background-color: #ccc;
+  color: black;
+}
+
 
 header #search {
   margin: auto;
-  width: 100%
+  width: 75%;
 }
 
 header #search form {
   width: 100%;
+  margin: auto;
 }
 
 header #search form input {
-  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  color: black;
+  padding: 5px;
+  font-family: light;
+  border: 1px solid black;
 }
 
-header ul {
-  text-decoration: none;
-  display: inline;
+header #search form input[type="text"] {
+  width: 70%;
+  height: 100%;
 }
 
-header ul li {
-  background-color: #333;
-  color: white;
+header #search form input[type="text"]:hover {
+  border: 1px solid #333;
+  box-shadow: inset 0px 0px 5px #333;
 }
 
+header #search form input[type="submit"] {
+  width: 27%;
+  background-color: #eee;
+  font-family: bold;
+  border: 3px solid black;
+}
+
+header #search form input[type="submit"]:hover {
+  background-color: #fff;
+  box-shadow: inset 0px 0px 5px #333;
+  
+}
