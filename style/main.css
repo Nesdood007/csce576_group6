@@ -62,7 +62,8 @@ body {
 
 header {
   background-color: #eee;
-  padding: 0px;
+  padding: 0px 0px 5px 0px;
+  border-bottom: 5px solid #333;
 }
 
 header #menu {
@@ -74,6 +75,10 @@ header #menu {
   float: right;
   padding: 5px;
   border-left: 5px solid #73000a;
+  background-image: url('/img/chevron-bottom.svg');
+  background-repeat: no-repeat;
+  background-size: auto 75%;
+  background-position: center right;
 }
 
 header #menu p {
@@ -97,10 +102,9 @@ header #logo {
 }
 
 header #nav {
-  border-radius: 5px;
   overflow: hidden;
   font-family: bold;
-  margin: auto;
+  margin: 5px auto;
   width: 80%;
 }
 
@@ -150,12 +154,17 @@ header #nav ul li a:hover {
 
 header #search {
   margin: auto;
-  width: 75%;
+  width: 80%;
+  overflow: hidden;
 }
 
 header #search form {
   width: 100%;
-  margin: auto;
+  margin: 0px 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 
 header #search form input {
@@ -165,11 +174,14 @@ header #search form input {
   padding: 5px;
   font-family: light;
   border: 1px solid black;
+  margin: 0px;
+  
 }
 
 header #search form input[type="text"] {
-  width: 70%;
+  width: 85%;
   height: 100%;
+  margin: 0px 5px 0px 0px;
 }
 
 header #search form input[type="text"]:hover {
@@ -178,7 +190,7 @@ header #search form input[type="text"]:hover {
 }
 
 header #search form input[type="submit"] {
-  width: 27%;
+  width: 10%;
   background-color: #eee;
   font-family: bold;
   border: 3px solid black;
