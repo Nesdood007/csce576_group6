@@ -60,6 +60,18 @@ body {
   font-family: regular;
 }
 
+.alert {
+  background-color: #ffb20c;
+  padding: 5px;
+  display: none; /* Hide it for now */
+}
+
+.alert p {
+  margin: 0;
+  font-family: black;
+  font-size: 20px;
+}
+
 header {
   background-color: #eee;
   padding: 0px 0px 5px 0px;
@@ -73,12 +85,53 @@ header #menu {
   margin: 0px;
   width: 25%;
   float: right;
-  padding: 5px;
-  border-left: 5px solid #73000a;
+  position: static; /* static */
+}
+
+header #menu .static {
+  background-color: blue;
   background-image: url('/img/chevron-bottom.svg');
   background-repeat: no-repeat;
   background-size: auto 75%;
   background-position: center right;
+  padding: 5px;
+  border-left: 5px solid #73000a;
+}
+
+header #menu .dropdown {
+  display: none;
+  background-color: green;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0px 5px 10px #555;
+  padding: 0px;/* 5px */
+  width: 25%;
+  overflow: hidden;
+  right: 0px;
+}
+
+header #menu:hover .dropdown {
+  display: block;
+}
+
+header #menu .dropdown .left {
+  background-color: red;
+  width: 20%;
+  min-height: 100%;
+  float: left;
+}
+
+header #menu .dropdown .right {
+  margin: 0px 0px 0px 20%;
+  background-color: lime-green;
+}
+
+header #menu .dropdown .buttons {
+  background-color: yellow;
+}
+
+header #menu .dropdown .links {
+  background-color: cyan;
 }
 
 header #menu p {
@@ -172,7 +225,7 @@ header #search form input {
   border-radius: 5px;
   color: black;
   padding: 5px;
-  font-family: light;
+  font-family: regular;
   border: 1px solid black;
   margin: 0px;
   
@@ -200,4 +253,21 @@ header #search form input[type="submit"]:hover {
   background-color: #fff;
   box-shadow: inset 0px 0px 5px #333;
   
+}
+
+p {
+  font-family: regular;
+}
+
+i {
+  font-family: italic;
+}
+
+b {
+  font-family: bold;
+}
+
+h1 {
+  font-family: black;
+  font-size: 30pt;
 }
