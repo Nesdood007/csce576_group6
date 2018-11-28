@@ -89,7 +89,6 @@ header #menu {
 }
 
 header #menu .static {
-  background-color: blue;
   background-image: url('/img/chevron-bottom.svg');
   background-repeat: no-repeat;
   background-size: auto 75%;
@@ -114,24 +113,123 @@ header #menu:hover .dropdown {
   display: block;
 }
 
+/* Sidebar */
 header #menu .dropdown .left {
-  background-color: red;
+  background-color: #111;
   width: 20%;
   min-height: 100%;
   float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: visible;
+}
+
+header #menu .dropdown .left img {
+  width: 100%;
+  margin: 5px 0px;
+}
+
+header #menu .dropdown .left ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 5px;
+  height: 100%;
 }
 
 header #menu .dropdown .right {
   margin: 0px 0px 0px 20%;
   background-color: lime-green;
+  min-height: 100%;
 }
 
 header #menu .dropdown .buttons {
-  background-color: yellow;
+  background-color:  #b2b4b3;
+  padding: 1px;
+  height: 100%;
+}
+
+header #menu .dropdown .buttons ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+header #menu .dropdown .buttons ul li {
+  display: block;
+  /*background-color: #73000a;*/
+  /*padding: 5px;*/
+  text-align: center;
+  margin: 5px;
+}
+
+header #menu .dropdown .buttons ul li a {
+  display: block;
+  padding: 5px;
+  font-family: bold;
+  color: black;
+  text-decoration: none;
+}
+
+header #menu .dropdown .buttons ul li a:hover {
+  background-color: #73000a;
+  color: white;
 }
 
 header #menu .dropdown .links {
-  background-color: cyan;
+  background-color: #695e4a;
+  color: white;
+  height: 100%;
+}
+
+header #menu .dropdown .links ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+
+header #menu .dropdown .links ul li {
+  display: block;
+  padding: 5px;
+  text-align: center;
+  font-family: bold;
+}
+
+header #menu .dropdown .links ul li a {
+  display: block;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+header #menu .dropdown .links ul li a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+header #menu .dropdown .logout {
+  text-align: center;
+  background-color: black;
+}
+
+header #menu .dropdown .logout a {
+  display: block;
+  background-image: url('/img/logout.png');
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: auto 75%;
+  font-family: bold;
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+}
+
+header #menu .dropdown .logout a:hover {
+  background-color: #eee;
+  color: black;
 }
 
 header #menu p {
