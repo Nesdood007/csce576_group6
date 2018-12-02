@@ -118,9 +118,9 @@ main div form {
       </div>
       <div id="nav">
         <ul>
-          <li> <a href="/course_page.html" onclick()>Courses</a> </li>
+          <li> <a class="selected" href="/course_page.html" onclick()>Courses</a> </li>
           <li> <a href="/grade_page.html" onclick()>Grades</a> </li>
-          <li> <a class="selected" href="/main_page.html" onclick()>My USC</a> </li>
+          <li> <a href="/main_page.html" onclick()>My USC</a> </li>
           <li> <a href="/tools_page.html" onclick()>Tools</a> </li>
           <li> <a href="/student_info.html" onclick()>Student Info</a> </li>
         </ul>
@@ -136,34 +136,56 @@ main div form {
     <main>
 <center>
   <div>
-      <form action="/main_page.html">
+      <form action="">
 
       <div class="header4Sub">
-          My Announcements
+          Current Term List (Fall 2018)
       </div>
 
         <div class="subform">
-          <p style="font-size: 100%;">Manual Grade of <STRONG>Test #1</STRONG> Updated in <a style="color: #3aafa6;" href="#">Electronics (ELCT371-001-FALL-2018)</a><button class="button button1" style="margin-left: 5%;margin-right: 2%;">View</button><button class="button button1" style="margin-right: 2%;">Dismiss</button> 5 days ago</p><hr>
+          <p style="font-size: 100%;"><a style="color: #3aafa6; margin-right: 12%" href="#">CSCE416-001-FALL-2018: Introduction to Computer Networks</a> <STRONG style="margin-right: 2%;">Instuctor:</STRONG> SRIHARI NELAKUDITI</p><hr>
 
-          <p style="font-size: 100%;">Content <STRONG>Practice Exam #1</STRONG> Available in <a style="color: #3aafa6;" href="#">Applied Linear Algebra (MATH344-002-FALL-2018)</a><button class="button button1" style="margin-left: 5%;margin-right: 2%;">Open</button><button class="button button1" style="margin-right: 2%;">Dismiss</button> 6 days ago</p><hr>
+          <p style="font-size: 100%;"><a style="color: #3aafa6; margin-right: 12%" href="#">CSCE490-001-FALL-2018: Capstone Computing Project I</a> <STRONG style="margin-right: 2%;">Instuctor:</STRONG> JOSE VIDAL</p><hr>
+         
+          <p style="font-size: 100%;"><a style="color: #3aafa6; margin-right: 12%" href="#">CSCE572-001-FALL-2018: Human-Computer Interaction</a> <STRONG style="margin-right: 2%;">Instuctor:</STRONG> YAN TONG</p><hr>
+         
+          <p style="font-size: 100%;"><a style="color: #3aafa6; margin-right: 12%" href="#">ENGL463-E01-FALL-2018: Business Writing</a> <STRONG style="margin-right: 2%;">Instuctor:</STRONG> BARBARA ANDERSON</p><hr>
+         
+          <p style="font-size: 100%;"><a style="color: #3aafa6; margin-right: 12%" href="#">MATH344-001-FALL-2018: Applied Linear Algebra</a> <STRONG style="margin-right: 2%;">Instuctor:</STRONG> XINFENG LIU</p>
 
-          <p style="font-size: 100%;">Manual Grade of <STRONG>Test #2</STRONG> Updated in <a style="color: #3aafa6;" href="#">Business Writing (ENGL463-E01-FALL-2018)</a><button class="button button1" style="margin-left: 5%;margin-right: 2%;">View</button><button class="button button1" style="margin-right: 2%;">Dismiss</button> 6 days ago</p><hr>
-          
-          <button class="button button1" style="margin-left: 80%; margin-top: 1%; margin-bottom: 1%">Show all</button>
         </div>
 
         <div class="header4Sub">
-          Upcoming Assignments and Tasks
-      </div>
+          Course Search
+        </div>
 
         <div class="subform">
-          <p style="font-size: 100%;"><STRONG>HW5</STRONG> in <a style="color: #3aafa6;" href="#">Electronics (ELCT371-001-FALL-2018)</a><button class="button button1" style="margin-left: 5%;margin-right: 2%;">Upload</button><button class="button button1" style="margin-right: 2%;">View</button> 4 days ago</p><hr>
+          <br>
+          <input type="text" name="Username" maxlength="12" minlength="5" placeholder="" style="width: 45%;"><button class="button button1" href="#" style="margin-left: 1%; margin-right: 10%;">Go</button><a style="color: #3aafa6;" href="#">Advanced Search</a>
+          <br><br>
 
-          <p style="font-size: 100%;"><STRONG>Quiz 5 (Finite State Machines)</STRONG> in <a style="color: #3aafa6;" href="#">Advanced Digital Design (CSCE611-001-FALL-2018)</a><button class="button button1" style="margin-left: 5%;margin-right: 2%;">Take Quiz</button><button class="button button1" style="margin-right: 2%;">View</button> 6 days ago</p><hr>
+        </div>
 
-          <p style="font-size: 100%;"><STRONG>Quiz 6 (Finite State Machines)</STRONG> in <a style="color: #3aafa6;" href="#">Advanced Digital Design (CSCE611-001-FALL-2018)</a><button class="button button1" style="margin-left: 5%;margin-right: 2%;">Take Quiz</button><button class="button button1" style="margin-right: 2%;">View</button> 12 days ago</p><hr>
+        <div class="header4Sub">
+          Course List (All Terms)
+        </div>
 
-          <button class="button button1" style="margin-left: 80%; margin-top: 1%; margin-bottom: 1%">View all</button>
+        <div class="subform">
+          <p style="margin-left: 60%; margin-right: 2%;">Sort by: <select style="background-color: rgb(229,229,229); margin-left: 3%;">
+              <option value="Subject">Subject</option>
+               <option value="Alphabetically">Alphabetically</option>
+                <option value="Most Recent">Most Recent</option>
+                  <option value="Oldest">Oldest</option>
+          </select> </p><hr>
+
+          <p style="font-size: 100%;"><a style="color: #3aafa6; margin-right: 12%" href="#">CSCE416-001-FALL-2018: Introduction to Computer Networks</a> <STRONG style="margin-right: 2%;">Instuctor:</STRONG> SRIHARI NELAKUDITI</p><hr>
+
+          <p style="font-size: 100%;"><a style="color: #3aafa6; margin-right: 12%" href="#">CSCE490-001-FALL-2018: Capstone Computing Project I</a> <STRONG style="margin-right: 2%;">Instuctor:</STRONG> JOSE VIDAL</p><hr>
+         
+          <p style="font-size: 100%;"><a style="color: #3aafa6; margin-right: 12%" href="#">CSCE572-001-FALL-2018: Human-Computer Interaction</a> <STRONG style="margin-right: 2%;">Instuctor:</STRONG> YAN TONG</p><hr>
+
+           <button class="button button1" style="margin-left: 80%; margin-top: 1%; margin-bottom: 1%">Show all</button>
+
         </div>
 
     </form>
