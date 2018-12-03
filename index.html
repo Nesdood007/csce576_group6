@@ -19,6 +19,7 @@ main div form {
  	margin-top: 25px;
     width: 60%;
     color: white;
+    font-size: 110%;
 }
 
 .subform1 {
@@ -60,7 +61,13 @@ main div form {
 }
 
 .button1:hover {background-color: #e7e7e7;}
+
+.hyperlinkColor {
+  color: #43b9cc;
+  font-weight:bold;
+}
 </style>
+
 
 
   <head>
@@ -148,10 +155,10 @@ main div form {
     			<input type="text" name="Username" maxlength="12" minlength="5" placeholder="Username ...."><br><br>
     			
     			Password:
-    			<input type="text" name="lastname" maxlength="12" minlength="5" placeholder="Password ...."><br><br>
+    			<input type="Password" maxlength="12" minlength="5" placeholder="Password ...."><br><br>
     			<input type="submit" value="Login"><br>
 
-    			<p style="font-size: 100%">Remember, passwords expire every 6 months. If you need to reset yours you can do so at <a href="http://my.sc.edu">my.sc.edu</a></p><br>
+    			<p style="font-size: 100%">Remember, passwords expire every 6 months. If you need to reset yours you can do so at <a class="hyperlinkColor" href="http://my.sc.edu">my.sc.edu</a></p><br>
 
 			</div>
 
@@ -169,7 +176,7 @@ main div form {
 			</div>
 
     		<div class="subform">
-    			<p style="font-size: 120%">Having trouble logging in or need technology help? <a href="https://sc.edu/ithelp">Click Here</a> for more information!  </p><br>
+    			<p style="font-size: 120%">Having trouble logging in or need technology help? <a class="hyperlinkColor" href="https://sc.edu/ithelp">Click Here</a> for more information!  </p><br>
     		</div>
 
 		</form>
