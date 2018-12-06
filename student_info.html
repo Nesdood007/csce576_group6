@@ -12,6 +12,25 @@ main div form {
     padding: 10px;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Create three equal columns that floats next to each other */
+.column1 {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+
 .header4Sub {
 	border: 1px solid black;
     background-color: rgb(204, 65, 37);
@@ -127,9 +146,9 @@ main div form {
         <ul>
           <li> <a href="/course_page.html" onclick()>Courses</a> </li>
           <li> <a href="/grade_page.html" onclick()>Grades</a> </li>
-          <li> <a class="selected" href="/main_page.html" onclick()>My USC</a> </li>
+          <li> <a href="/main_page.html" onclick()>My USC</a> </li>
           <li> <a href="/tools_page.html" onclick()>Tools</a> </li>
-          <li> <a href="/student_info.html" onclick()>Student Info</a> </li>
+          <li> <a class="selected" href="/student_info.html" onclick()>Student Info</a> </li>
         </ul>
       </div>
       <div id="search">
@@ -146,36 +165,63 @@ main div form {
       <form action="/main_page.html">
 
       <div class="header4Sub">
-          My Announcements
+          Student Personal And Contact Information
       </div>
 
         <div class="subform">
-          <p style="font-size: 100%;">Manual Grade of <STRONG>Test #1</STRONG> Updated in <a class="hyperlinkColor" href="#">Electronics (ELCT371-001-FALL-2018)</a><button class="button button1" style="margin-left: 5%;margin-right: 2%;">View</button><button class="button button1" style="margin-right: 2%;">Dismiss</button> 5 days ago</p><hr>
+        	<div>
+            <div class="column">
+            	<div style="margin-left: 15%;">
+                	<p style="font-size: 100%;"><STRONG>Name: </STRONG>"Student Name"</p>
 
-          <p style="font-size: 100%;">Content <STRONG>Practice Exam #1</STRONG> Available in <a class="hyperlinkColor" href="#">Applied Linear Algebra (MATH344-002-FALL-2018)</a><button class="button button1" style="margin-left: 5%;margin-right: 2%;">Open</button><button class="button button1" style="margin-right: 2%;">Dismiss</button> 6 days ago</p><hr>
+	                <p style="font-size: 100%;"><STRONG>Email: </STRONG>"student@email.sc.edu"</p>
 
-          <p style="font-size: 100%;">Manual Grade of <STRONG>Test #2</STRONG> Updated in <a class="hyperlinkColor" href="#">Business Writing (ENGL463-E01-FALL-2018)</a><button class="button button1" style="margin-left: 5%;margin-right: 2%;">View</button><button class="button button1" style="margin-right: 2%;">Dismiss</button> 6 days ago</p><hr>
+					<p style="font-size: 100%;"><STRONG>Phone: </STRONG>(###) ### - ####</p>
+				</div>
+            </div>
+            <div class="column">
+                <img style="margin-left: 60%; border-radius: 14px; border: 10px solid #424344; background: #424344; width: 25%; height: 25%;" src="/img/avatar.gif" alt="Avatar">
+            </div>
+          </div>    
           
-          <button class="button button1" style="margin-left: 80%; margin-top: 1%; margin-bottom: 1%">Show all</button>
+          <button class="button button1" style="margin-left: 70%; margin-top: 1%; margin-bottom: 1%">Edit Information</button>
         </div>
 
         <div class="header4Sub">
-          Upcoming Assignments and Tasks
-      </div>
+          Personal Settings and Privacy Options
+      	</div>
+
+         <div class="subform">
+        	<div>
+            <div class="column1">
+         		<p style="font-size: 100%;"><a class="hyperlinkColor" style="text-align: center;" href="#">Personalize my Settings</a></p>
+
+            </div>
+            <div class="column1">
+                <p style="font-size: 100%;"><a class="hyperlinkColor" style="text-align: center;" href="#">Change Personal Settings</a></p>
+            </div>
+
+            <div class="column1">
+                <p style="font-size: 100%;"><a class="hyperlinkColor" style="text-align: center;" href="#">Set Privacy Options</a></p>
+            </div>
+          </div>   
+
+          <br><br><br><br>
+        </div>
+
+        <div class="header4Sub">
+          Organizations
+      	</div>
 
         <div class="subform">
-          <p style="font-size: 100%;"><STRONG>HW5</STRONG> in <a class="hyperlinkColor" href="#">Electronics (ELCT371-001-FALL-2018)</a><button class="button button1" style="margin-left: 5%;margin-right: 2%;">Upload</button><button class="button button1" style="margin-right: 2%;">View</button> 4 days ago</p><hr>
+         <p style="font-size: 100%;"><a class="hyperlinkColor" style="text-align: center;" href="#">Academic Assistance: Student Success Center 1 (AA-STUDENT-SUCCESS-1)</a></p><br>
 
-          <p style="font-size: 100%;"><STRONG>Quiz 5 (Finite State Machines)</STRONG> in <a class="hyperlinkColor" href="#">Advanced Digital Design (CSCE611-001-FALL-2018)</a><button class="button button1" style="margin-left: 5%;margin-right: 2%;">Take Quiz</button><button class="button button1" style="margin-right: 2%;">View</button> 6 days ago</p><hr>
-
-          <p style="font-size: 100%;"><STRONG>Quiz 6 (Finite State Machines)</STRONG> in <a class="hyperlinkColor" href="#">Advanced Digital Design (CSCE611-001-FALL-2018)</a><button class="button button1" style="margin-left: 5%;margin-right: 2%;">Take Quiz</button><button class="button button1" style="margin-right: 2%;">View</button> 12 days ago</p><hr>
-
-          <button class="button button1" style="margin-left: 80%; margin-top: 1%; margin-bottom: 1%">View all</button>
         </div>
 
     </form>
   </div>
 </center>
+
 </main>
-  </body>
+</body>
 </html>
