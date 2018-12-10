@@ -5,7 +5,8 @@ main div form {
 	box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    width: 92%;
+    width: 95%;
+    height:1000px;
     border: solid rgb(153, 153, 153);
     background-color: rgb(229,229,229);
     color:#fff;
@@ -19,7 +20,6 @@ main div form {
  	margin-top: 25px;
     width: 60%;
     color: white;
-    font-size: 110%;
 }
 
 .subform1 {
@@ -39,47 +39,19 @@ main div form {
     width: 60%;
     color: black;
 }
-
-.button {
-    background-color: #b6c4c3; 
-    border: none;
-    color: white;
-    padding: 5px 24px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 13px;
-    margin: 0px 0px;
-    cursor: pointer;
-    border-radius: 10px;
-}
-
-.button1 {
-    background-color: #d0dbda;
-    color: black;
-    border: 2px solid #aaafaf;
-}
-
-.button1:hover {background-color: #e7e7e7;}
-
-.hyperlinkColor {
-  color: #43b9cc;
-  font-weight:bold;
-}
 </style>
 
 
-
   <head>
-    <title> Sign In Page </title>
+    <title> Index Page </title>
     <link rel="stylesheet" href="/style/main.css">
   </head>
-  <body bgcolor="#b3b3b3">
+  <body>
     <div class="alert">
       <p> This is an Alert! </p>
     </div>
     <header>
-      <div id="menu" style="display:none;">
+      <div id="menu">
         <div class="static">
           <img class="avatar" src="/img/avatar.gif">
           <p> Student Name </p>
@@ -125,63 +97,35 @@ main div form {
       </div>
       <div id="nav">
         <ul>
-          <li> <a class="disabled" href="#">Courses</a> </li>
-          <li> <a class="disabled" href="#">Grades</a> </li>
-          <li> <a class="selected" href="#">My USC</a> </li>
-          <li> <a class="disabled" href="#">Tools</a> </li>
-          <li> <a class="disabled" href="#">Student Info</a> </li>
+          <li> <a class="selected" href="#">Courses</a> </li>
+          <li> <a href="#">Grades</a> </li>
+          <li> <a href="#">My USC</a> </li>
+          <li> <a href="#">Tools</a> </li>
+          <li> <a href="#">Student Info</a> </li>
         </ul>
       </div>
-      <div id="search" style="display: none;">
+      <div id="search">
         <form action="/search.html">
           <input type="text">
           <input type="submit" value="Search">
         </form>
       </div>
     </header>
-    <br><br>
-<main>
-<center>
-	<div>
-  		<form action="/main_page.html">
-
-  			<div class="header4Sub">
-    			Login Here
-			</div>
-
-  			<div class="subform1">
-  				<br>
-    			Username:
-    			<input type="text" name="Username" maxlength="12" minlength="5" placeholder="Username ...."><br><br>
-    			
-    			Password:
-    			<input type="Password" maxlength="12" minlength="5" placeholder="Password ...."><br><br>
-    			<input type="submit" value="Login"><br>
-
-    			<p style="font-size: 100%">Remember, passwords expire every 6 months. If you need to reset yours you can do so at <a class="hyperlinkColor" href="http://my.sc.edu">my.sc.edu</a></p><br>
-
-			</div>
-
-			<div class="header4Sub">
-    			Blackboard Alerts!
-			</div>
-
-    		<div class="subform">
-    			<p style="font-size: 120%; color: Red">Latest Alert: </p>
-    			<p style="font-size: 120%">Blackboard will be unavailable from Saturday Oct. 13th, 2018 @ 6:00 p.m. to Sunday Oct. 14th, 2018 @ 8:00 a.m.</p><br>
-    		</div>
-
-    		<div class="header4Sub">
-    			Troubleshooting
-			</div>
-
-    		<div class="subform">
-    			<p style="font-size: 120%">Having trouble logging in or need technology help? <a class="hyperlinkColor" href="https://sc.edu/ithelp">Click Here</a> for more information!  </p><br>
-    		</div>
-
-		</form>
-	</div>
-</center>
-</main>
+    <main>
+      <center>
+        <div>
+          <form action="/action_page.php">
+            <!-- Header -->
+            <div class="header4Sub">
+              Recent Grades
+            </div>
+            <!-- Content -->
+            <div class="subform1">
+              <h1> THINGS GO HERE! </h1>
+            </div>
+          </form>
+        </div>
+      </center>
+    </main>
   </body>
 </html>

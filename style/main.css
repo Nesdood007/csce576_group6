@@ -296,6 +296,16 @@ header #nav ul li a.selected {
   color: white;
 }
 
+header #nav ul li a.disabled {
+  background-color: #ddd;
+  color: #555;
+}
+
+header #nav ul li a.disabled:hover {
+  background-color: #ddd;
+  color: #555;
+}
+
 header #nav ul li a:hover {
   text-decoration: none;
   background-color: #ccc;
