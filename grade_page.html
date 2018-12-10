@@ -6,7 +6,7 @@ main div form {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     width: 95%;
-    height:1000px;
+    min-height:1000px;
     border: solid rgb(153, 153, 153);
     background-color: rgb(229,229,229);
     color:#fff;
@@ -39,6 +39,44 @@ main div form {
     width: 60%;
     color: black;
 }
+
+/* Added Style for Grades PAge */
+table {
+  border: 0;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 0;
+}
+
+th {
+  font-family: bold;
+  font-size: 20px;
+  background-color: #333;
+  color: #eee;
+  padding: 10px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+td {
+  font-size: 20px;
+  padding: 5px;
+  font-family: light;
+}
+
+tr.new td {
+  background-color: #ebed76;
+  font-family: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
 </style>
 
 
@@ -97,11 +135,11 @@ main div form {
       </div>
       <div id="nav">
         <ul>
-          <li> <a class="selected" href="#">Courses</a> </li>
-          <li> <a href="#">Grades</a> </li>
-          <li> <a href="#">My USC</a> </li>
-          <li> <a href="#">Tools</a> </li>
-          <li> <a href="#">Student Info</a> </li>
+          <li> <a href="/course_page.html">Courses</a> </li>
+          <li> <a class="selected" href="#">Grades</a> </li>
+          <li> <a href="main_page.html">My USC</a> </li>
+          <li> <a href="tools_page.html">Tools</a> </li>
+          <li> <a href="student_info.html">Student Info</a> </li>
         </ul>
       </div>
       <div id="search">
@@ -121,7 +159,205 @@ main div form {
             </div>
             <!-- Content -->
             <div class="subform1">
-              <h1> THINGS GO HERE! </h1>
+              <table> 
+                <tr>
+                  <th> Class </th>
+                  <th> Item Name </th>
+                  <th> Grade Percentage </th>
+                </tr>
+                <tr class="new">
+                  <td> CSCE572 </td>
+                  <td> Exam 2 </td>
+                  <td> 95% </td>
+                </tr>
+                <tr>
+                  <td> CSCE416 </td>
+                  <td> Wireshark Lab 5 </td>
+                  <td> 100% </td>
+                </tr>
+                <tr>
+                  <td> ENGL463 </td>
+                  <td> Resume Review </td>
+                  <td> 100% </td>
+                </tr>
+                <tr>
+                  <td> MATH344 </td>
+                  <td> Exam 2 </td>
+                  <td> 85% </td>
+                </tr>
+              </table>
+            </div>
+            <div class="header4Sub">
+              Introduction to Computer Networks: CSCE416 - Section 001 Fall 2018
+            </div>
+            <div class="subform1">
+              <table> 
+                <tr>
+                  <th> Grade Item </th>
+                  <th> Grade </th>
+                  <th> Range </th>
+                  <th> Percent </th>
+                  <th> Weight </th>
+                  <th> Comments </th>
+                </tr>
+                <tr class="">
+                  <td> Homework 1 </td>
+                  <td> 100 </td>
+                  <td> 0 - 100 </td>
+                  <td> 100% </td>
+                  <td> .5% </td>
+                  <td> Good work! </td>
+                </tr>
+                <tr class="">
+                  <td> Homework 2 </td>
+                  <td> 100 </td>
+                  <td> 0 - 100 </td>
+                  <td> 100% </td>
+                  <td> .5% </td>
+                  <td> Good work! </td>
+                </tr>
+                <tr class="">
+                  <td> Homework 3 </td>
+                  <td> 100 </td>
+                  <td> 0 - 100 </td>
+                  <td> 100% </td>
+                  <td> .5% </td>
+                  <td> Good work! </td>
+                </tr>
+                <tr class="">
+                  <td> Homework 4 </td>
+                  <td> 100 </td>
+                  <td> 0 - 100 </td>
+                  <td> 100% </td>
+                  <td> .5% </td>
+                  <td> Good work! </td>
+                </tr>
+                <tr class="">
+                  <td> Exam 1 </td>
+                  <td> 100 </td>
+                  <td> 0 - 100 </td>
+                  <td> 100% </td>
+                  <td> 20% </td>
+                  <td> Good work! </td>
+                </tr>
+              </table>
+            </div>
+            <div class="header4Sub">
+              Capstone Computing Project 1: CSCE490 - Section 001 Fall 2018
+            </div>
+            <div class="subform1">
+              <table> 
+                <tr>
+                  <th> Grade Item </th>
+                  <th> Grade </th>
+                  <th> Range </th>
+                  <th> Percent </th>
+                  <th> Weight </th>
+                  <th> Comments </th>
+                </tr>
+                <tr class="">
+                  <td> Final Presentation </td>
+                  <td> 100 </td>
+                  <td> 0 - 100 </td>
+                  <td> 100% </td>
+                  <td> 100% </td>
+                  <td> Fantastic Presentation of your prototype! </td>
+                </tr>
+              </table>
+            </div>
+            <div class="header4Sub">
+              Human-Computer Interactions: CSCE572 - Section 001 Fall 2018
+            </div>
+            <div class="subform1">
+              <table> 
+                <tr>
+                  <th> Grade Item </th>
+                  <th> Grade </th>
+                  <th> Range </th>
+                  <th> Percent </th>
+                  <th> Weight </th>
+                  <th> Comments </th>
+                </tr>
+                <tr class="">
+                  <td> IRB Training </td>
+                  <td> 100 </td>
+                  <td> 0 - 100 </td>
+                  <td> 100% </td>
+                  <td> .5% </td>
+                  <td>  </td>
+                </tr>
+                <tr class="">
+                  <td> Essay About Yourself </td>
+                  <td> 100 </td>
+                  <td> 0 - 100 </td>
+                  <td> 100% </td>
+                  <td> .5% </td>
+                  <td> Riveting Stuff! </td>
+                </tr>
+                <tr class="">
+                  <td> Exam 1 </td>
+                  <td> 100 </td>
+                  <td> 0 - 100 </td>
+                  <td> 100% </td>
+                  <td> 20% </td>
+                  <td>  </td>
+                </tr>
+                <tr class="new">
+                  <td> Exam 2 </td>
+                  <td> 95 </td>
+                  <td> 0 - 100 </td>
+                  <td> 95% </td>
+                  <td> 20% </td>
+                  <td>  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="header4Sub">
+              Business Writing: ENGL 463 - Section E01 Fall 2018
+            </div>
+            <div class="subform1">
+              <table> 
+                <tr>
+                  <th> Grade Item </th>
+                  <th> Grade </th>
+                  <th> Range </th>
+                  <th> Percent </th>
+                  <th> Weight </th>
+                  <th> Comments </th>
+                </tr>
+                <tr>
+                  <td> Resume Review </td>
+                  <td> 100 </td>
+                  <td> 0 - 100 </td>
+                  <td> 100% </td>
+                  <td> 5% </td>
+                  <td> Certainly a Good Start! </td>
+                </tr>
+                
+              </table>
+            </div>
+            <div class="header4Sub">
+              Applied Linear Algebra: MATH344 - Section 001 Fall 2018
+            </div>
+            <div class="subform1">
+              <table> 
+                <tr>
+                  <th> Grade Item </th>
+                  <th> Grade </th>
+                  <th> Range </th>
+                  <th> Percent </th>
+                  <th> Weight </th>
+                  <th> Comments </th>
+                </tr>
+                <tr class="">
+                  <td> Exam 1 </td>
+                  <td> 85 </td>
+                  <td> 0 - 100 </td>
+                  <td> 85% </td>
+                  <td> 20% </td>
+                  <td>  </td>
+                </tr>
+              </table>
             </div>
           </form>
         </div>
